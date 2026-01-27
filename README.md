@@ -18,5 +18,13 @@
 - **Testing:** Currently tested to boot into TWRP.  
 - **Permanent Flashing:** Safe to flash via `fastboot flash recovery recovery.img` after testing.  
 
-## When publish
-After i do some tests ( about 21:30 (9 pm ) today (27 of January)
+## Works 
+- adb
+- mount
+- wipe
+- probaly install
+- file manager
+- terminal
+
+## Where do i download? 
+On this page!
