@@ -1,6 +1,8 @@
 # TWRP for Alcatel 5029Y (k62v1_64_bsp)
 
 **Status:** ✅ Ported and boots successfully  
+## WARNING
+Please backup your recovery.img, in case of a brick!
 
 ## Device Info
 - Model: Alcatel 5029Y  
@@ -35,3 +37,8 @@
 On this page!
 
 ## Bugs? Tell me!
+
+## Bricked?
+Use python mtk.py w recovery /path/to/your/backup_of_recovery.img (you dont need DA and auth because its an old chipset.)
+
+
