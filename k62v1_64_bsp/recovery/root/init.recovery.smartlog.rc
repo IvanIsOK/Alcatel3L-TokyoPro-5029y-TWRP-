@@ -1,0 +1,96 @@
+##Mdofied sys.smart by xuanfeng.ye for task8554795(vts issue) on 2019-11-12
+##add 20190605 by xiaorong.ling.hz for task7819533 (smartlog 3.0)
+#in pixi4-4 C, proinfo partition cannot mount in init_first_stage
+# so device ready must wait after mount_all
+on post-fs
+    write /sys/smartlog/device_ready 1
+
+#note recovery is start
+on property:init.svc.recovery=running
+    write /sys/smartlog/boot_status recovery
+
+#in block encrypted, before password verify
+on property:vold.decrypt=trigger_restart_min_framework
+    write /sys/smartlog/boot_status min_framework
+
+#android os start
+on property:init.svc.zygote=running
+    write /sys/smartlog/boot_status zygote_running
+
+#boot completed, for FDE
+on property:sys.boot_completed=1 && property:vold.decrypt=trigger_restart_framework
+    write /sys/smartlog/boot_status boot_completed
+
+#boot completed, for non encrypted
+on property:sys.boot_completed=1 && property:ro.crypto.state=unencrypted
+    write /sys/smartlog/boot_status boot_completed
+
+#boot completed, for FBE
+on property:sys.boot_completed=1 && property:ro.crypto.type=file
+    write /sys/smartlog/boot_status boot_completed
+
+#device unlock, for FDE
+on property:vold.decrypt=trigger_restart_framework
+    write /sys/smartlog/boot_status device_unlock
+
+#device unlock, for non encrypted
+on property:ro.crypto.state=unencrypted
+    write /sys/smartlog/boot_status device_unlock
+
+#android os restart
+on property:init.svc.zygote=restarting
+    write /sys/smartlog/subsystem_restart zygote_restart
+
+# Begin added to add listerner for AION by yangao.chen for T8832615 on 2020-01-21
+on property:persist.sys.tct_framework.download_mode.enabled=false && property:sys.boot_completed=1
+    write /sys/smartlog/aion_fastboot_status fastboot_disable
+
+on property:persist.sys.tct_framework.download_mode.enabled=true && property:sys.boot_completed=1
+    write /sys/smartlog/aion_fastboot_status fastboot_enable
+    
+on property:persist.sys.tct_framework.factory_reset.enabled=false && property:sys.boot_completed=1
+    write /sys/smartlog/aion_fastboot_status factory_reset_disable
+
+on property:persist.sys.tct_framework.factory_reset.enabled=true && property:sys.boot_completed=1
+    write /sys/smartlog/aion_fastboot_status factory_reset_enable
+# End added to add listerner for AION by yangao.chen for T8832615 on 2020-01-21
+
+#modem start will set init, reset, bootup, ready status.
+#modem start, for non encrypted
+on property:mtk.md1.status=bootup && property:ro.crypto.state=unencrypted
+    write /sys/smartlog/subsystem_restart modem_bootup
+
+#modem start, for FDE
+on property:mtk.md1.status=bootup && property:vold.decrypt=trigger_restart_framework
+    write /sys/smartlog/subsystem_restart modem_bootup
+
+#modem start, for FBE
+on property:mtk.md1.status=bootup && property:ro.crypto.type=file
+    write /sys/smartlog/subsystem_restart modem_bootup
+
+
+##rescue party information, write level_x to kernel
+on property:sys.rescue_level=*
+    write /sys/smartlog/system_status level_${sys.rescue_level}
+
+# app crash or ANR, write app_x to kernel
+on property:vendor.smart.crash_type=*
+    write /sys/smartlog/system_status app_${vendor.smart.crash_type}
+
+on property:vold.post_fs_data_done=1
+    dump_free_space /data
+#save userdata free size
+on property:vendor.smart.free_size=*
+    write /sys/smartlog/system_status size_${vendor.smart.free_size}
+
+#save adb status
+on property:persist.sys.usb.config=*
+    write /sys/smartlog/system_status usb_${persist.sys.usb.config}
+
+#save user setup completed status
+on property:vendor.smart.system_status=*
+    write /sys/smartlog/system_status ${vendor.smart.system_status}
+
+#save system version
+on property:ro.rom.yinfo=*
+    write /sys/smartlog/system_status ver_${ro.rom.yinfo}
