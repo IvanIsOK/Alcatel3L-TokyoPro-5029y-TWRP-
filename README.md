@@ -28,6 +28,8 @@
 - ofc touchsreen
 - reboot
 - tempature
+- screen turn off / on
+- other things
 
 ## Where do i download? 
 On this page!
