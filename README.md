@@ -25,6 +25,11 @@
 - probaly install
 - file manager
 - terminal
+- ofc touchsreen
+- reboot
+- tempature
 
 ## Where do i download? 
 On this page!
+
+## Bugs? Tell me!
