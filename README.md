@@ -4,7 +4,7 @@
 
 ## Device Info
 - Model: Alcatel 5029Y  
-- Codename: `k62v1_64_bsp`  
+- Codename: `TokyoPro`  
 - CPU: MediaTek (MTK)  
 - Android Version: 10  
 
