@@ -1,4 +1,4 @@
-# TWRP for Alcatel 5029Y (k62v1_64_bsp)
+# TWRP for Alcatel 5029Y (k62v1_64_bsp) (prob works for all Alcatel 3L 2020 (5029))
 
 **Status:** ✅ Ported and boots successfully  
 ## WARNING
@@ -79,9 +79,10 @@ Please backup your recovery.img, in case of a brick!
 ## Where do i download? 
 On this page!
 
+##Instalation
+https://xdaforums.com/t/twrp-for-alcatel-3l-2020-made-with-5029y-kernel-unofficial.4777025/
+
 ## Bugs? Tell me!
 
 ## Bricked?
 Use python mtk.py w recovery /path/to/your/backup_of_recovery.img (you dont need DA and auth because its an old chipset.)
-
-
