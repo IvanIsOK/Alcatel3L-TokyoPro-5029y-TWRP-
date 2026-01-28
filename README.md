@@ -52,6 +52,7 @@ Please backup your recovery.img, in case of a brick!
 ✅ More partitions mountable than stock recovery
 
 ✅ Screenshot
+
 🟠 NOT TESTED YET
 
 ⏳ F2FS support
