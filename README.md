@@ -79,7 +79,7 @@ Please backup your recovery.img, in case of a brick!
 ## Where do i download? 
 On this page!
 
-##Instalation
+## Instalation
 https://xdaforums.com/t/twrp-for-alcatel-3l-2020-made-with-5029y-kernel-unofficial.4777025/
 
 ## Bugs? Tell me!
