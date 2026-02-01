@@ -35,7 +35,7 @@ Please backup your recovery.img, in case of a brick!
 
 ✅ Wipe partitions
 
-✅ Install ZIPs / APKs (via sideload – Magisk tested)
+✅ Install ZIPs / APKs (via sideload and "Install" – Magisk tested)
 
 ✅ File Manager
 
