@@ -53,6 +53,8 @@ Please backup your recovery.img, in case of a brick!
 
 ✅ Screenshot
 
+✅ F2FS support
+
 🟠 NOT TESTED YET
 
 ⏳ F2FS support
