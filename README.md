@@ -57,8 +57,6 @@ Please backup your recovery.img, in case of a brick!
 
 🟠 NOT TESTED YET
 
-⏳ F2FS support
-
 ⏳ EXT4 support
 
 ⏳ /data decryption
