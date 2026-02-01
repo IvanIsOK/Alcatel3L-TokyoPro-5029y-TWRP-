@@ -87,5 +87,5 @@ https://xdaforums.com/t/twrp-for-alcatel-3l-2020-made-with-5029y-kernel-unoffici
 ## Bricked?
 Use python mtk.py w recovery /path/to/your/backup_of_recovery.img (you dont need DA and auth because its an old chipset.)
 
-## TWRP getting replaced by stovk recovery?
+## TWRP getting replaced by stock recovery?
 Try dumping the vbmeta partitions and flash them with --disable-veririty --disable-verification flags
