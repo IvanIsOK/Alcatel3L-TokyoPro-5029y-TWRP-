@@ -1,4 +1,4 @@
-9# TWRP for Alcatel 5029Y (k62v1_64_bsp) (prob works for all Alcatel 3L 2020 (5029))
+# TWRP for Alcatel 5029Y (k62v1_64_bsp) (prob works for all Alcatel 3L 2020 (5029))
 
 **Status:** ✅ Ported and boots successfully  
 ## WARNING
