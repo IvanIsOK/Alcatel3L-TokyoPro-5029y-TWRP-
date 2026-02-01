@@ -1,4 +1,4 @@
-# TWRP for Alcatel 5029Y (k62v1_64_bsp) (prob works for all Alcatel 3L 2020 (5029))
+9# TWRP for Alcatel 5029Y (k62v1_64_bsp) (prob works for all Alcatel 3L 2020 (5029))
 
 **Status:** ✅ Ported and boots successfully  
 ## WARNING
@@ -88,4 +88,5 @@ https://xdaforums.com/t/twrp-for-alcatel-3l-2020-made-with-5029y-kernel-unoffici
 Use python mtk.py w recovery /path/to/your/backup_of_recovery.img (you dont need DA and auth because its an old chipset.)
 
 ## TWRP getting replaced by stock recovery?
-Try dumping the vbmeta partitions and flash them with --disable-veririty --disable-verification flags
+Try dumping the vbmeta partitions and flash them with --disable
+veririty and --disable-verification flags
