@@ -49,8 +49,6 @@ Please backup your recovery.img, in case of a brick!
 
 ✅ General UI functionality
 
-✅ More partitions mountable than stock recovery
-
 ✅ Screenshot
 
 ✅ F2FS support
