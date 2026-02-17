@@ -28,7 +28,7 @@ Please backup your recovery.img, in case of a brick!
  
 
 ## Notes
-- **Bootloader:** Unlocked  
+There are more partitions mountable but half of them cant even be mounted: Im going to fix fstab soon so it dosent confuse.
 
 ## Working
 🟢 WORKS (confirmed)
