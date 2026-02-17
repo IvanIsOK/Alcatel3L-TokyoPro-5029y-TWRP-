@@ -63,9 +63,9 @@ There are more partitions mountable but half of them cant even be mounted: Im go
 
 ✅ F2FS support
 
-🟠 NOT TESTED YET
+✅ EXT4 support
 
-⏳ EXT4 support
+🟠 NOT TESTED YET
 
 ⏳ /data decryption
 
@@ -84,6 +84,7 @@ There are more partitions mountable but half of them cant even be mounted: Im go
 ❌ MicroSD backup/restore (no SD card available)
 
 ❌ USB-OTG testing (no adapter available)
+
 ## Where do i download? 
 On this page!
 
