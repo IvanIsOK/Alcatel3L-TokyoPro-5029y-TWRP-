@@ -29,8 +29,6 @@ Please backup your recovery.img, in case of a brick!
 
 ## Notes
 - **Bootloader:** Unlocked  
-- **Testing:** Currently tested to boot into TWRP.  
-- **Permanent Flashing:** Safe to flash via `fastboot flash recovery recovery.img` after testing.  
 
 ## Working
 🟢 WORKS (confirmed)
@@ -60,8 +58,6 @@ Please backup your recovery.img, in case of a brick!
 ✅ Battery level
 
 ✅ General UI functionality
-
-✅ More partitions mountable than stock recovery
 
 ✅ Screenshot
 
