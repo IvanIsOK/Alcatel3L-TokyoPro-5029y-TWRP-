@@ -45,7 +45,7 @@ There are more partitions mountable but half of them cant even be mounted: Im go
 
 ✅ Wipe partitions
 
-✅ Install ZIPs / APKs (via sideload and "Install" – Magisk tested)
+✅ Install ZIPs
 
 ✅ File Manager
 
