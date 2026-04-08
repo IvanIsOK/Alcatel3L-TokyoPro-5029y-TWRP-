@@ -90,5 +90,5 @@ On this page!
 
 ## Instalation
 https://xdaforums.com/t/twrp-for-alcatel-3l-2020-made-with-5029y-kernel-unofficial.4777025/
-
+READ THE CAUTION AT THE END OF THE INSTALATON INSTRUCTION.
 ## Bugs? Tell me!
