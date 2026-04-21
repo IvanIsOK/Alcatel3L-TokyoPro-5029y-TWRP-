@@ -92,3 +92,6 @@ On this page!
 https://xdaforums.com/t/twrp-for-alcatel-3l-2020-made-with-5029y-kernel-unofficial.4777025/
 READ THE CAUTION AT THE END OF THE INSTALATON INSTRUCTION.
 ## Bugs? Tell me!
+
+## OrangeFox?
+I can port it if you guys want but it will take some time .. Just post an issue here that you want OrangeFox.
