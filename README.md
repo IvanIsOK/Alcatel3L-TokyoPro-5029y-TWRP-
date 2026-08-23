@@ -67,8 +67,6 @@ There are more partitions mountable but half of them cant even be mounted: Im go
 
 🟠 NOT TESTED YET
 
-⏳ /data decryption
-
 ⏳ Encrypted backups
 
 ⏳ MTP
@@ -81,8 +79,7 @@ There are more partitions mountable but half of them cant even be mounted: Im go
 
 🔴 NOT APPLICABLE / UNAVAILABLE
 
-❌ MicroSD backup/restore (no SD card available)
-
+❌ MicroSD backup/restore (lost my tray)
 ❌ USB-OTG testing (no adapter available)
 
 ## Where do i download? 
